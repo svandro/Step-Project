@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <title>Main</title>
+    <style>
+
+      @font-face {
+        font-family: Font;
+        src: url(Roboto-VariableFont_wdth\,wght.ttf);
+      }
+
+      body {
+        margin: 0;
+        background-color: #f3f3f3;
+        color: #000000;
+        line-height: 1.6;
+        font-family: Font;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      nav a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: black;
+        font-weight: 500;
+      }
+
+      .nav-link:hover {
+        color: #ff9800;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        transition: 0.5s;
+        color: #ff9800;
+      }
+
+      .Main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 340px;
+        padding: 50px;
+        background-color: #f3f3f3;
+        margin-top: 130px;
+      }
+
+      .Main-image {
+        flex: 0 0 250px;
+        margin-right: 50px;
+      }
+
+      .Main-image img {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border: 4px solid #e0e0e0;
+      }
+
+      .Main-content {
+        flex: 1;
+      }
+
+      .Main-content h1 {
+        font-size: 100px;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+        color: #000000;
+      }
+
+      .Main-content p {
+        font-size: 16px;
+        margin: 0 0 40px 0;
+        max-width: 500px;
+      }
+
+      .links {
+        display: flex;
+        gap: 30px;
+      }
+
+      .btn {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        border: black 1px solid;
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        color: black !important;
+        background-color: white !important;
+        border-radius: 50%;
+        border: black 1px solid;
+      }
+
+      .resume-btn {
+        background-color: #ff9800;
+      }
+
+      .projects-btn {
+        background-color: #f44336;
+      }
+
+      .contact-btn {
+        background-color: #00bcd4;
+      }
+
+      footer {
+        background-color: #f3f3f3;
+        padding: 40px 60px;
+        margin-top: 0px;
+        font-size: 15px;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      .footer-col {
+        color: #333;
+      }
+
+      .footer-col strong {
+        color: #000;
+        font-weight: 600;
+      }
+
+      .footer-col i {
+        font-size: 30px;
+        padding-left: 5px;
+      }
+
+      .social {
+        font-size: 24px;
+        margin-right: 15px;
+        color: #000;
+        text-decoration: none;
+      }
+
+      .copyright {
+        text-align: right;
+        color: #666;
+        font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+
+        .logo {
+          font-size: 20px;
+        }
+
+        .logo span {
+          font-size: 14px !important;
+        }
+
+        .Main {
+          flex-direction: column;
+          text-align: start;
+          margin-left: 0;
+          margin-top: 60px;
+          padding: 20px;
+        }
+
+        .Main-image {
+          order: 2;
+          flex: none;
+          margin: 40px auto 0;
+        }
+
+        .Main-image img {
+          width: 300px;
+          height: 300px;
+        }
+
+        .Main-content {
+          order: 1;
+        }
+
+        .Main-content h1 {
+          font-size: 70px;
+          margin-bottom: 10px;
+        }
+
+        .Main-content p {
+          font-size: 16px;
+          max-width: 100%;
+          margin-bottom: 50px;
+        }
+
+        .links {
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+
+        .btn {
+          width: 120px;
+          height: 120px;
+          font-size: 18px;
+          margin: 0;
+        }
+
+        footer {
+          margin-top: 80px;
+          padding: 40px 20px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          text-align: start;
+          gap: 30px;
+        }
+
+        .copyright {
+          text-align: start;
+          margin-top: 10px;
+        }
+
+        .footer-col i {
+          margin: 0px;
+          font-size: 28px;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1600px) {
+        .Main {
+          margin-left: 250px;
+          margin-top: 80px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="logo" href="Main.html"
+          >Nicol Rider<span
+            style="
+              color: gray;
+              font-size: medium;
+              cursor: text;
+              margin-left: 10px;
+            "
+            >Editor</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="Resume.html">Resume</a>
+            <a class="nav-link" href="Projects.html">Projects</a>
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="Main">
+      <div class="Main-image">
+        <img src="images/girl.avif" alt="Nicol Rider Profile Photo" />
+      </div>
+      <div class="Main-content">
+        <h1>Hello</h1>
+        <p>
+          <span style="font-weight: bold; font-size: larger"
+            >A Bit About Me</span
+          ><br />I'm a paragraph. Click here to add your own text <br />
+          and edit me. I'm a great place for you to tell a story <br />
+          and let your users know a little more about you.
+        </p>
+        <div class="links">
+          <a href="Resume.html" class="btn resume-btn">Resume</a>
+          <a href="Projects.html" class="btn projects-btn">Projects</a>
+          <a href="Contact.html" class="btn contact-btn">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <hr
+      style="
+        border: none;
+        height: 1px;
+        background-color: gray;
+        margin-top: 100px;
+      " />
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-col">
+          <strong>Phone</strong><br />
+          123-456-7890
+        </div>
+        <div class="footer-col">
+          <strong>Email</strong><br />
+          <span style="cursor: pointer">info@mysite.com</span>
+        </div>
+        <div class="footer-col">
+          <strong>Follow Me</strong><br />
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-twitter"></i>
+        </div>
+        <div class="footer-col copyright">
+          © 2025 By Nicol Rider.<br />
+          Powered and secured by <u>Wix</u>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
